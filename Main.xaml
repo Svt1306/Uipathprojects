@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="837.6,27477.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,27477.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -45,6 +45,8 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -124,11 +126,7 @@
       <Variable x:TypeArguments="x:Int32" Default="1" Name="histogram_images" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="j" />
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;C:\Users\Asus\Downloads\Final assessment report B division.xlsx&quot;,autoSave:=True,readOnly:=False,isWorkspace:=False)]" Name="Final_assessment_report_B_division" />
-      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Name="Adv_Web_CIE_Data">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="ue:IWorkbookQuickHandle" ExpressionText="new WorkbookQuickHandle(workbookPath:=&quot;C:\Users\Asus\Downloads\Adv.Web-CIE Data.xlsx&quot;,autoSave:=True,readOnly:=False,isWorkspace:=False)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;C:\Users\Asus\Downloads\Adv.Web-CIE Data.xlsx&quot;,autoSave:=True,readOnly:=False,isWorkspace:=False)]" Name="Adv_Web_CIE_Data" />
     </ueab:SequenceX.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -208,7 +206,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,4086.4" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="[string.Format(&quot;{0}\may27.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,4086.4" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="CIE Analysis.pptx">
                       <ui:PowerPointApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                           <ActivityAction.Argument>
@@ -367,7 +365,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3651.2" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_2" PresentationPath="[string.Format(&quot;{0}\may27.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3651.2" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_2" PresentationPath="CIE Analysis.pptx">
                       <ui:PowerPointApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                           <ActivityAction.Argument>
@@ -521,7 +519,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_3" PresentationPath="[string.Format(&quot;{0}\may27.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_3" PresentationPath="CIE Analysis.pptx">
                       <ui:PowerPointApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                           <ActivityAction.Argument>
@@ -652,7 +650,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_4" PresentationPath="[string.Format(&quot;{0}\may27.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_4" PresentationPath="CIE Analysis.pptx">
                       <ui:PowerPointApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                           <ActivityAction.Argument>
@@ -777,7 +775,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_6" PresentationPath="[string.Format(&quot;{0}\may27.pptx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+                    <ui:PowerPointApplicationScope Password="{x:Null}" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="510.4,3453.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_6" PresentationPath="CIE Analysis.pptx">
                       <ui:PowerPointApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                           <ActivityAction.Argument>

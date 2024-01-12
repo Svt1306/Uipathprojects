@@ -27,5 +27,6 @@
   "UiPath.UIAutomationNext.Activities.SearchStepsSAP.IgnoreSelectorsWithIdx": "True",
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyTypedText": "False",
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False",
-  "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None"
+  "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.EdgeInteractionMode": "DebuggerApi"
 }

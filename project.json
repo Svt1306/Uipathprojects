@@ -1,7 +1,7 @@
 {
-  "name": "may27",
+  "name": "RPA Project on Automated CIE analysis",
   "projectId": "4d959561-72f3-4af3-bcdc-610e47e7711c",
-  "description": "Blank Task",
+  "description": "The robot automatically opens the browser specified and and enters the data values from the corresponding excel sheets and generates a histogram. It also creates a power point presentation and prepares the presenraion of the same.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.ComplexScenarios.Activities": "[1.4.0]",
@@ -16,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.1.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
     "autoDispose": false,
@@ -47,7 +47,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "isTemplate": false,
